@@ -3,7 +3,7 @@
 int main(){
     int a,b;
     scanf("%d %d",&a,&b);
-    if(a%2==0 && a!==0);
+    if(a%2==0 && a!==0)
     printf("Positive");
     else if (a%2!==0 && a!=0)
     printf("Negative");
