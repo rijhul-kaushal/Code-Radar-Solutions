@@ -1,13 +1,15 @@
 // Your code here...
 #include <stdio.h>
 int main(){
-    int a;
+    int a,int prime=0;
     scanf("%d",&a);
-    if(a<2)
-    printf("Enter a valid Number");
-    else if (a%a==0 || a==2)
+    for(i=2;i<a;i++)
+    {
+        if(a%i==0 ||a==2)
+        prime=1;
+    }
+    if(prime)
     printf("Prime");
-    else 
+    else
     printf("Not Prime");
-    return 0;
 }
