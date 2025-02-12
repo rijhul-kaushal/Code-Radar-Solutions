@@ -1,20 +1,29 @@
-// Your code here...
 #include <stdio.h>
-int main(){
-    int a,b,d;
+
+int main() {
+    int a, b, d;
     char c;
-    scanf("%d %d %c" ,&a, &b, &c);
-    if(c=='+'){
-    d=a+b;
-    printf("%d",d);}
-    if(c=='-'){
-    d=a-b;
-    printf("%d",d);}
-      if(c=='*'){
-    d=a*b;
-    printf("%d",d);}
-      if(c=='/'){
-    d=a/b;
-    printf("%d",d);}
-    return 0;  
+    scanf("%d %d %c", &a, &b, &c);
+    if (c == '+') {
+        d = a + b;
+        printf("%d\n", d);
+    } else if (c == '-') {
+        d = a - b;
+        printf("%d\n", d);
+    } else if (c == '*') {
+        d = a * b;
+        printf("%d\n", d);
+    } else if (c == '/') {
+       
+        if (b != 0) {
+            d = a / b;
+            printf("%d\n", d);
+        } else {
+            printf("Error! Division by zero.\n");
+        }
+    } else {
+        printf("Invalid operator.\n");
+    }
+
+    return 0;
 }
