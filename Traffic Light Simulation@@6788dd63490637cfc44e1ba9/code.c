@@ -6,7 +6,7 @@ int main(){
     if(a=='R')
     printf("Stop");
     else if(a=='Y')
-    printf("GO");
+    printf("Go");
     else if(a=='Y')
     printf("Slow Down");
     else 
