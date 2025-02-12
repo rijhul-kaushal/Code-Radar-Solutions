@@ -7,6 +7,7 @@ int main(){
     {
         if(a%i==0 ||a==2)
         prime=1;
+        break;
     }
     if(prime)
     printf("Prime");
