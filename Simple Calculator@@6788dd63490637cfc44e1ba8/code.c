@@ -6,7 +6,7 @@ int main(){
     if(c=='+'){
     d=a+b;
     printf("%d",d);}
-    if(c=='-'){
+    if(c==-){
     d=a-b;
     printf("%d",d);}
       if(c=='*'){
