@@ -14,7 +14,7 @@ int main(){
     printf("%d",d);}
       if(c=='/'){
     d=a/b;
-    printf("%d",d);}
+    printf(d);}
     return 0;
     
     
