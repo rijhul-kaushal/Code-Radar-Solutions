@@ -6,6 +6,6 @@ int main(){
     if(a>=60)
     printf("Eligible");
     else
-    printf("Nor Eligible");
+    printf("Not Eligible");
     return 0;
 }
