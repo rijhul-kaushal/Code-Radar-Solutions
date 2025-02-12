@@ -1,7 +1,8 @@
 // Your code here...
 #include <stdio.h>
 int main(){
-    int a,b,c,d;
+    int a,b,d;
+    char c;
     scanf("%d %d %d",&a,&b,&c);
     if(c=='+'){
     d=a+b;
@@ -14,7 +15,7 @@ int main(){
     printf("%d",d);}
       if(c=='/'){
     d=a/b;
-    printf(d);}
+    printf("%d",d);}
     return 0;
     
     
