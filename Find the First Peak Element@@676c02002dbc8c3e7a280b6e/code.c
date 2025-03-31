@@ -1,6 +1,6 @@
 // Your code here...
 #include <stdio.h>
-int isPeak(int arr[],int x)
+int isPeak(int arr[],int x);
 for(int i=0;i<x;i++){
     if(i==0){
         if(i>i+1){
@@ -27,6 +27,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",arr[n]);
     }
-    isPeak(arr,n)
+    isPeak(arr,n);
     return 0;
 }
