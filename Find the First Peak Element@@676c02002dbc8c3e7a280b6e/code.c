@@ -8,7 +8,7 @@ void isPeak(int arr[],int x){
             
         }
         else if (i==x){
-            if(arr[i]>arr[i-1]){
+            if(arr[i]>arr[i-2]){
                 printf("%d",arr[i]);
             }
         }
@@ -27,7 +27,7 @@ void isPeak(int arr[],int x){
 int main(){
     int n;
     scanf("%d",&n);
-    int arr[];
+    int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",arr[i]);
     }
