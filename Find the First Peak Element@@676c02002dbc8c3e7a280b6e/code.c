@@ -1,7 +1,7 @@
 // Your code here...
 #include <stdio.h>
-int isPeak(int arr[],int x);
-  for(int i=0;i<x;i++){
+int isPeak(int arr[],int x);{
+    for(int i=0;i<x;i++){
     if(i==0){
         if(i>i+1){
             printf("%d",arr[i]);
@@ -20,6 +20,9 @@ int isPeak(int arr[],int x);
         }
     }
     }
+
+}
+  
 
 int main(){
     int n;
