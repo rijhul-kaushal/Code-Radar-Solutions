@@ -1,36 +1,32 @@
-// Your code here...
 #include <stdio.h>
-void isPeak(int arr[],int x){
-    for(int i=0;i<x;i++){
-    if(i==0){
-        if(arr[i]>arr[i+1]){
-            printf("%d",arr[i]);
-            
-        }
-        else if (i==x){
-            if(arr[i]>arr[i-2]){
-                printf("%d",arr[i]);
-            }
-        }
-        else
-        for(int i=1;i<x-1;i++){
-            if (arr[i]>arr[i-1] && arr[i]>arr[i+1]){
-                printf("%d",arr[i]);
-            }
-        }
-    }
-    }
 
+void isPeak(int arr[], int x) {
+    for (int i = 0; i < x; i++) {
+        if (i == 0) {  
+            // First element: Compare with next element only
+            if (arr[i] > arr[i + 1]) {
+                printf("%d ", arr[i]);
+            }
+        } 
+        else if (i == x - 1) {  
+            // Last element: Compare with previous element only
+            if (arr[i] > arr[i - 1]) {
+                printf("%d ", arr[i]);
+            }
+        } 
+        else {  
+            // Middle elements: Compare with both neighbors
+            if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+                printf("%d ", arr[i]);
+            }
+        }
+    }
 }
-  
 
-int main(){
+int main() {
     int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",arr[i]);
-    }
-    isPeak(arr,n);
-    return 0;
-}
+    scanf("%d", &n);
+
+    int arr[n];  // ✅ Correct array declaration
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i
