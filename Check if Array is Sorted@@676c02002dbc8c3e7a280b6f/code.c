@@ -1,6 +1,6 @@
 // Your code here..
 #include <stdio.h>
-void isSorted(int arr[],int x){
+int isSorted(int arr[],int x){
     for(int i=0;i<x-1;i++){
         if(arr[i]>arr[i+1]){
         return 0;}
