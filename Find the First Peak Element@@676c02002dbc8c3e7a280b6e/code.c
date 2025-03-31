@@ -29,4 +29,9 @@ int main() {
 
     int arr[n];  // ✅ Correct array declaration
     for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i
+        scanf("%d", &arr[i]);  // ✅ Correct input
+    }
+
+    isPeak(arr, n);  // ✅ Function call
+    return 0;
+}
